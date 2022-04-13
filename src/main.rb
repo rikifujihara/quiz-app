@@ -37,22 +37,54 @@ def start_quiz(qns)
   puts "You got #{score} out of 5!"
 
   File.open('user_performance.txt', 'a') do |file|
-    file.write("\nDate/Time : #{current_time.strftime "%d/%m/%Y %H:%M"}")
+    file.write("\nDate/Time : #{current_time.strftime '%d/%m/%Y %H:%M'}")
     file.write("\nTopic : #{ARGV[0]}")
     file.write("\nScore : #{score} out of 5")
     file.write("\n-------------------------")
+  end
 
-    
+  File.open('user_performance.txt', 'r') do |file|
+    puts file.read
   end
 end
 
 system 'clear'
 
-begin
-  start_quiz(data_hash[ARGV[0]])
-rescue StandardError
-  puts 'please enter either one of the following:'
-  puts 'ruby main.rb html'
-  puts 'ruby main.rb css'
-  puts 'ruby main.rb ruby'
+if ARGV[0]
+  begin
+    start_quiz(data_hash[ARGV[0]])
+  rescue StandardError
+    puts 'please enter either one of the following:'
+    puts 'ruby main.rb html'
+    puts 'ruby main.rb css'
+    puts 'ruby main.rb ruby'
+  end
+else
+  selection = TTY::Prompt.new.select('Please make a selection :)', echo: false) do |options|
+    options.choice('HTML quiz', 1)
+    options.choice('CSS quiz', 2)
+    options.choice('Ruby quiz', 2)
+    options.choice('Reset Performance Data', 4)
+    options.choice('Exit', 5)
+  end
+  case selection
+
+  when 1
+    ARGV[0] = 'html'
+    start_quiz(data_hash['html'])
+
+  when 2
+    ARGV[0] = 'css'
+    start_quiz(data_hash['css'])
+
+  when 3
+    ARGV[0] = 'ruby'
+    start_quiz(data_hash['ruby'])
+
+  when 4
+    File.open('user_performance.txt', 'w') do |file|
+      file.write('USER PERFORMANCE')
+      file.write("\n--------------")
+    end
+  end
 end
