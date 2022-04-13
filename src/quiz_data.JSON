@@ -2,8 +2,8 @@
     "html":[
     {"question":{
         "prompt": "What does 'HTML' stand for?",
-        "option_1": {"text": "Holdem Texas Major League JSON - works??", "is_correct": false},
-        "option_2": {"text": "Hyper Text Markup Language - works!!", "is_correct": true},
+        "option_1": {"text": "Holdem Texas Major League", "is_correct": false},
+        "option_2": {"text": "Hyper Text Markup Language", "is_correct": true},
         "option_3": {"text": "Huge Text Markup Language", "is_correct": false},
         "option_4": {"text": "Hyper Text Major Language", "is_correct": false}
     }},
@@ -36,5 +36,42 @@
         "option_4": {"text": "<lb>", "is_correct": false}
     }}
     ],
+    "css":[
+    {"question":{
+        "prompt": "What does 'CSS' stand for?",
+        "option_1": {"text": "Counter Strike Seven", "is_correct": false},
+        "option_2": {"text": "Cascading Style Sheets", "is_correct": true},
+        "option_3": {"text": "Clear Style Sheet", "is_correct": false},
+        "option_4": {"text": "Computer Style Sheets", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "Where do you reference an external style sheet in an HTML document?",
+        "option_1": {"text": "In <main></main>", "is_correct": false},
+        "option_2": {"text": "In <body></body>", "is_correct": false},
+        "option_3": {"text": "In <stylesheets></stylesheets>", "is_correct": false},
+        "option_4": {"text": "In <head></head>", "is_correct": true}
+    }},
+    {"question":{
+        "prompt": "How do you use comments in CSS?",
+        "option_1": {"text": "// like this", "is_correct": false},
+        "option_2": {"text": "'like this", "is_correct": false},
+        "option_3": {"text": "'like this'", "is_correct": false},
+        "option_4": {"text": "/* like this */", "is_correct": true}
+    }},
+    {"question":{
+        "prompt": "What CSS syntax is used to change the color of an element?",
+        "option_1": {"text": "h1: {color, black;}", "is_correct": false},
+        "option_2": {"text": "h1 {color: black;}", "is_correct": true},
+        "option_3": {"text": "{h1: {color, black;}", "is_correct": false},
+        "option_4": {"text": "<h1> {color, black;}", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "What property changes the font of an element?",
+        "option_1": {"text": "font-style", "is_correct": false},
+        "option_2": {"text": "font-type", "is_correct": false},
+        "option_3": {"text": "font-family", "is_correct": true},
+        "option_4": {"text": "font-weight", "is_correct": false}
+    }}
+    ]
 }
 
