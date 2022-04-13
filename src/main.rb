@@ -12,7 +12,7 @@ end
 puts 
 
 def json_method(qns)
-    wrong_answers = []
+    performance = Hash.new {|h, k| h[k] = ''}
     score = 0
     qns.each do |question|
       answer = TTY::Prompt.new.select(question['question']['prompt'], echo: false) do |options|
@@ -28,14 +28,16 @@ def json_method(qns)
         puts 'correct.'.colorize(:green)
         puts '----------------'
         score += 1
+        performance[question['question']['option_1']['text']] = "correct!"
   
       else
         puts 'nope.'.colorize(:red)
         puts '----------------'
-        wrong_answers << question['question']['prompt']
+        performance[question['question']['option_1']['text']] = "incorrect :("
       end
     end
     puts "You got #{score} out of 5!"
+    puts performance
 end
 
 
