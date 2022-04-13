@@ -35,10 +35,10 @@ def json_method(qns)
         wrong_answers << question['question']['prompt']
       end
     end
+    puts "You got #{score} out of 5!"
 end
 
 
 
 json_method(data_hash['html'])
 
-puts "---------"
