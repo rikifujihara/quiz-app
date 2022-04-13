@@ -1,0 +1,1 @@
+file = File.read('./quiz_data.json')
