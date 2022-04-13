@@ -1,0 +1,40 @@
+{
+    "html":[
+    {"question":{
+        "prompt": "What does 'HTML' stand for?",
+        "option_1": {"text": "Holdem Texas Major League JSON - works??", "is_correct": false},
+        "option_2": {"text": "Hyper Text Markup Language - works!!", "is_correct": true},
+        "option_3": {"text": "Huge Text Markup Language", "is_correct": false},
+        "option_4": {"text": "Hyper Text Major Language", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "Where is metadata for HTML documents contained?",
+        "option_1": {"text": "<main></main>", "is_correct": false},
+        "option_2": {"text": "<body></body>", "is_correct": false},
+        "option_3": {"text": "<meta></meta>", "is_correct": false},
+        "option_4": {"text": "<head></head>", "is_correct": true}
+    }},
+    {"question":{
+        "prompt": "How do you insert a level one heading text element?",
+        "option_1": {"text": "<h1></h1>", "is_correct": true},
+        "option_2": {"text": "<h2></h2>", "is_correct": false},
+        "option_3": {"text": "<h8></h8>", "is_correct": false},
+        "option_4": {"text": "<h3></h3>", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "Who decides on Web standards?",
+        "option_1": {"text": "The World Wide Web Consortium", "is_correct": true},
+        "option_2": {"text": "Apple", "is_correct": false},
+        "option_3": {"text": "Google", "is_correct": false},
+        "option_4": {"text": "Firefox", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "How do you insert a line break?",
+        "option_1": {"text": "<break></break>", "is_correct": false},
+        "option_2": {"text": "<br>", "is_correct": true},
+        "option_3": {"text": "<break>", "is_correct": false},
+        "option_4": {"text": "<lb>", "is_correct": false}
+    }}
+    ],
+}
+
