@@ -72,6 +72,43 @@
         "option_3": {"text": "font-family", "is_correct": true},
         "option_4": {"text": "font-weight", "is_correct": false}
     }}
+    ],
+    "ruby":[
+    {"question":{
+        "prompt": "Who invented Ruby?",
+        "option_1": {"text": "Robert Kiyosaki", "is_correct": false},
+        "option_2": {"text": "Jarrod Folino", "is_correct": false},
+        "option_3": {"text": "Yukihiro Matsumoto", "is_correct": true},
+        "option_4": {"text": "Satoshi Nakamoto", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "Is Ruby cooler than Python?",
+        "option_1": {"text": "No, Python is better", "is_correct": false},
+        "option_2": {"text": "It's a subjective question", "is_correct": false},
+        "option_3": {"text": "Yup", "is_correct": true},
+        "option_4": {"text": "It really depends on the context", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "What is the syntax for using a gem in a ruby file?",
+        "option_1": {"text": "gem-require '(gem_name)'", "is_correct": false},
+        "option_2": {"text": "import '(gem_name)'", "is_correct": false},
+        "option_3": {"text": "link '(gem_name)'", "is_correct": false},
+        "option_4": {"text": "require '(gem_name)'", "is_correct": true}
+    }},
+    {"question":{
+        "prompt": "What is the syntax for linking another ruby file?",
+        "option_1": {"text": "require_relative '(file_name_path)'", "is_correct": true},
+        "option_2": {"text": "import '(file_name)'", "is_correct": false},
+        "option_3": {"text": "link '(file_name_path)'", "is_correct": false},
+        "option_4": {"text": "require '(file_name_path)'", "is_correct": false}
+    }},
+    {"question":{
+        "prompt": "What provides a namespace to store methods?",
+        "option_1": {"text": "Methods", "is_correct": false},
+        "option_2": {"text": "Modules", "is_correct": true},
+        "option_3": {"text": "Arrays", "is_correct": false},
+        "option_4": {"text": "Integers", "is_correct": false}
+    }}
     ]
 }
 
