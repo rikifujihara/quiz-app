@@ -1,22 +1,19 @@
-require_relative '../quiz_method.rb'
+# frozen_string_literal: true
 
-describe "start quiz method"  do
-    it 'should increase user score by 1 for correct answers' do
+require_relative '../quiz_method'
+
+describe 'start quiz method' do
+  it 'should increase user score by 1 for correct answers' do
     score = 0
     answer = true
-    if answer
-        score += 1
-    end
+    score += 1 if answer
     expect(score).to eq(1)
-    end
+  end
 
-    it 'should not increase user score for incorrect answers' do
+  it 'should not increase user score for incorrect answers' do
     score = 0
     answer = false
-    if answer
-        score += 1
-    end
+    score += 1 if answer
     expect(score).to eq(0)
-    end
-
+  end
 end

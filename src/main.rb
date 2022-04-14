@@ -19,8 +19,10 @@ end
 system 'clear'
 
 font = TTY::Font.new(:standard)
-puts font.write("WELCOME")
-table = TTY::Table.new(["Command","Function"], [["ruby main.rb", "Open main menu"], ["./main_menu.sh", "Open main menu"],["./main_menu.sh <quiz topic>", "Directly starts a quiz for the topic"]])
+puts font.write('WELCOME')
+table = TTY::Table.new(%w[Command Function],
+                       [['ruby main.rb', 'Open main menu'], ['./main_menu.sh', 'Open main menu'],
+                        ['./main_menu.sh <quiz topic>', 'Directly starts a quiz for the topic'], ['./html_quiz.sh', 'Start html quiz'], ['./css_quiz.sh', 'Start css quiz'], ['./ruby_quiz.sh', 'Start ruby quiz']])
 puts table.render(:ascii)
 
 if ARGV[0]
@@ -57,7 +59,7 @@ else
 
   when 4
     File.open('user_performance.txt', 'r') do |file|
-      puts file.read()
+      puts file.read
     end
 
   when 5
@@ -67,4 +69,3 @@ else
     end
   end
 end
-

@@ -1,6 +1,2 @@
 USER PERFORMANCE
 --------------
-Date/Time : 14/04/2022 11:19
-Topic : ruby
-Score : 4 out of 5
--------------------------
