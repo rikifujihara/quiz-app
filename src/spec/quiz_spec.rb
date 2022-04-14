@@ -5,12 +5,7 @@ describe "start quiz method"  do
     score = 0
     answer = true
     if answer
-        puts 'correct.'.colorize(:green)
-        puts '----------------'
         score += 1
-      else
-        puts 'nope.'.colorize(:red)
-        puts '----------------'
     end
     expect(score).to eq(1)
     end
@@ -19,12 +14,7 @@ describe "start quiz method"  do
     score = 0
     answer = false
     if answer
-        puts 'correct.'.colorize(:green)
-        puts '----------------'
         score += 1
-      else
-        puts 'nope.'.colorize(:red)
-        puts '----------------'
     end
     expect(score).to eq(0)
     end

@@ -20,7 +20,7 @@ system 'clear'
 
 font = TTY::Font.new(:standard)
 puts font.write("WELCOME")
-table = TTY::Table.new(["Command","Function"], [["ruby main.rb <topic>", "Directly starts a quiz for the topic"], ["ruby main.rb", "Open up with all"]])
+table = TTY::Table.new(["Command","Function"], [["ruby main.rb", "Open main menu"], ["./main_menu.sh", "Open main menu"],["./main_menu.sh <quiz topic>", "Directly starts a quiz for the topic"]])
 puts table.render(:ascii)
 
 if ARGV[0]

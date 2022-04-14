@@ -16,10 +16,14 @@ def start_quiz(qns)
         options.choice(question['question']['option_4']['text'], question['question']['option_4']['is_correct'])
       end
       system 'clear'
+      puts '----------------'   
+      puts 'Yep.'.colorize(:green)
       puts '----------------'
       if answer
         score += 1
       else
+        system 'clear'
+        puts '----------------'
         puts 'nope.'.colorize(:red)
         puts '----------------'
       end
