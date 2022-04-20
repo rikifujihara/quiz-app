@@ -18,18 +18,18 @@ def start_quiz(qns)
       options.choice(question['question']['option_3']['text'], question['question']['option_3']['is_correct'])
       options.choice(question['question']['option_4']['text'], question['question']['option_4']['is_correct'])
     end
-    system 'clear'
-    puts '----------------'
-    puts 'Yep.'.colorize(:green)
-    puts '----------------'
+
     if answer
       score += 1
+      system 'clear'
+      puts '----------------'
+      puts 'Yep.'.colorize(:green)
     else
       system 'clear'
       puts '----------------'
       puts 'nope.'.colorize(:red)
-      puts '----------------'
     end
+    puts '----------------'
   end
   system 'clear'
   puts "You got #{score} out of 5!"
