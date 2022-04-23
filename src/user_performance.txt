@@ -1,14 +1,2 @@
 USER PERFORMANCE
 --------------
-Date/Time : 20/04/2022 18:56
-Topic : css
-Score : 1 out of 5
--------------------------
-Date/Time : 20/04/2022 18:56
-Topic : ruby
-Score : 3 out of 5
--------------------------
-Date/Time : 20/04/2022 18:56
-Topic : css
-Score : 4 out of 5
--------------------------

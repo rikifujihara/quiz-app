@@ -32,7 +32,7 @@ The user can choose to reset all of their performance by making a selction from 
 
 # Style Guide
 
-This app's source code stying is mainly guided by Shopify's Ruby Style Guide which can be found <a href="https://ruby-style-guide.shopify.dev/#general">here</a>. Rubocop was used frequently which automatically styles the ruby code with best-practice conventions.
+This app's source code stying is mainly guided by Shopify's Ruby Style Guide which can be found <a href="https://ruby-style-guide.shopify.dev/#general">here</a>. Rubocop was used frequently to automatically style the ruby code with best-practice conventions.
 
 # Implementation Plan
 
@@ -72,6 +72,8 @@ This automated test checks that the application's fundamental feature of increme
 ## Dependencies
 
 This terminal application was developed for Mac OS and will be compatible with most Mac OS versions. The Bundler gem will be required to install all dependencies - installation instructions for the Bundler gem can be found <a href='https://bundler.io'>here</a>.
+
+All command line arguments and their functions are included in the main menu.
 
 Gems used include:
 
@@ -113,11 +115,11 @@ You can do this by running either `ruby main.rb` or `./main_menu.sh`.
 
 ## Step 6: Try out some quizzes
 
-Go ahead and test your coding knowledge.
+Go ahead and test your coding knowledge - instructions for all command line arguments are visible in the main menu.
 
 # Attribution
 
-- This website showed me how to get the current date and time in Ruby. <a href='https://www.tutorialspoint.com/ruby/ruby_date_time.htm'>here</a>
+- This website showed me how to get the current date and time in Ruby <a href='https://www.tutorialspoint.com/ruby/ruby_date_time.htm'>here</a>
 
 - TTY Prompt documentation <a href='https://github.com/piotrmurach/tty-prompt'>here</a>
 
